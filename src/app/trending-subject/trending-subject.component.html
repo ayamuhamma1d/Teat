@@ -1,0 +1,32 @@
+<p>trending-subject works!</p>
+<div class="col-md-10 vh-100  ms-auto mt-5 py-5">
+    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo a nulla earum sunt animi dolores molestias deleniti quibusdam neque minus enim autem in pariatur nisi, veniam, minima provident sed omnis. Ea eveniet repudiandae animi corrupti
+        reprehenderit commodi aliquid optio vel saepe. Magni, nobis quas. Impedit enim placeat distinctio recusandae quo iusto dignissimos facilis eligendi molestiae quibusdam velit odit vitae quidem aut hic soluta, nulla voluptatum delectus doloribus
+        voluptas ab nam exercitationem quod. Recusandae molestiae est id, delectus consectetur minima tenetur libero dolor inventore quos ipsam vel quidem esse voluptate adipisci aperiam eveniet fugiat cupiditate eligendi voluptatum rerum velit soluta
+        non. Expedita sint, eum ducimus animi magni architecto amet, natus consequatur perferendis, nam et accusantium repellat quos maiores explicabo voluptas numquam totam temporibus non iure? Obcaecati animi illum beatae ad, quis culpa quisquam, repellendus
+        vel tempore vero dolore soluta nihil. Quis officia nisi quae asperiores, ab, enim nesciunt excepturi sint alias corrupti porro odio ullam consequatur deleniti corporis, ipsa quo inventore dignissimos saepe! Velit, veniam, placeat corrupti pariatur
+        voluptate sit nisi minus consectetur atque blanditiis quo commodi quis? Corporis harum quia fugiat, deserunt aspernatur molestias atque incidunt quasi? Ipsa distinctio obcaecati quo debitis eaque, nam veritatis eos et porro? Soluta maxime cumque
+        porro quo aut earum sunt. Amet minus necessitatibus libero illo fugit, numquam odit voluptatibus suscipit officia laudantium deserunt voluptatum, dignissimos cumque eaque non eius at autem exercitationem. Id magni, inventore praesentium nulla
+        cupiditate at, porro qui ratione, iste minus hic dolor autem aliquid aliquam animi reiciendis repellendus consectetur ad numquam. Iure numquam at sit in assumenda aliquam magni architecto ut corporis, repellat labore corrupti veritatis, omnis
+        quaerat eveniet cum officia tenetur odit qui. Reprehenderit facilis voluptatem incidunt libero vitae doloremque repudiandae quidem quasi ex, dolores architecto sunt eos iusto enim placeat ratione cumque itaque mollitia maxime ab totam.</p> -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">title</th>
+                <th scope="col">Author</th>
+                <th scope="col">First Publish Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of trendingBooks " class="row-data lh-lg ps-3">
+                <td>
+                    <a class="tw-no-underline" href="https://openlibrary.org/{{book.key}}" target="_blank">{{book.title}}</a>
+                </td>
+                <td>
+                    {{ book.authors[0].name}}
+                </td>
+                <td>{{ book.first_publish_year }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
